@@ -1,0 +1,205 @@
+body {
+    background: linear-gradient(to right,  #4a6db3, #4a6db3, #2a467f);
+    text-align: center;
+}
+
+.mainTitle {
+    width: 35vh;
+    color: aliceblue;
+    margin: 10px auto 45px;
+    font-size: 5em;
+    font-family: 'Russo One', 'Roboto', sans-serif;
+}
+
+.number-style {
+    background: linear-gradient(to right,  #eeefec, #eff0ea);
+    width: 50em;
+    padding: 50px 0;
+    margin: 1.8em auto;
+    box-shadow: 0 0 3px;
+    border-radius: 5px;
+}
+
+.results p {
+    margin-top: 10px;
+    padding: 0 20px;
+    font-size: 2em;
+}
+
+.percentage-style {
+    width: 35vh;
+    margin: -25px auto 65px;
+    font-size: 1.25em;
+    color: rgb(225, 225, 254);
+    text-shadow: 0 0 10px #11196c;
+}
+
+.warning {
+    margin: 20px auto -20px;
+    color: #d3d2f5;
+    text-shadow: 0 0 10px #170136;
+    font-size: 2.5em;
+}
+
+.number-style label {
+    width: 20px;
+    margin: 0 30px;
+    padding: 0px;
+    font-size: 2em;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#submitButton{
+    background: rgb(94, 114, 230);
+    color: #ffffff;
+    font-size: 2em;
+    padding: 0.1em 3em;
+    margin: -10em 0em 4.5em 0;
+    cursor: pointer;
+    line-height: 2em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px #000;
+}
+
+#submitButtonGenerate:hover, #submitButtonReset:hover, #submitButton:hover{
+    transition: .8s;
+    background-color: rgb(75, 29, 135);
+    color: #8884b9;
+    box-shadow: none;
+}
+
+input[type="number"] {
+    width: 2.8em;
+    padding: 30px 0px;
+    font-size: 2.8em;
+    margin: 15px 25px 0 0;
+    text-align: center;
+    border-radius: 43%;
+}
+
+.suggestion-style {
+    width: 10em;
+    margin: 25px auto -10px;
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 0 0 3px #000;
+    font-family: 'Reem Kufi Ink', 'Roboto', sans-serif;
+}
+
+.results .server-number {
+    margin-top: 45px;
+    font-size: 2em;
+    color: #bcb8ed;
+}
+
+.results .sentence-style{
+    color: #b049f5;
+    margin-top: -45px;
+    margin-bottom: -10px;
+    padding: 0 0 10px 0;
+    font-size: 2em;
+}
+
+#submitButtonGenerate, #submitButtonReset {
+    background: rgb(94, 114, 230);
+    color: #ffffff;
+    font-size: 1.5em;
+    padding: 0.1em 1em;
+    margin: -10em 0em 4.5em 0;
+    cursor: pointer;
+    line-height: 2em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px #000;
+}
+
+#submitButtonGenerate:active, #submitButtonReset:active, #submitButton:active {
+    background: #fff;
+}
+
+.results {
+    background-color: #570080;
+    color: #f2f1fb;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 2px #000;
+    width: 800px;
+    margin: -80px auto;
+    padding: 20px 50px 70px 50px;
+    font-size: 1.4em;
+    font-family: 'Reem Kufi Ink', 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    .number-style {
+        width: 25em;
+        padding: 30px;
+    }
+    
+    input[type="number"] {
+        width: 250px;
+        height: 100px;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 6em;
+    }
+
+    .suggestion-style {
+        font-size: 2em;
+    }
+
+    #buttons {
+        margin: 40px;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .percentage-style {
+        padding-top: 20px;
+        width: 28vh;
+        margin: -25px auto 65px;
+        font-size: 2em;
+    }
+    
+    select, select option {
+        width: 28vh;
+        height: 5vh;
+        font-size: 2vh;
+        padding: 10px;  /* Ajuste o padding conforme necessário */
+      }
+
+    #buttons > *{
+        margin: 5px;
+    }
+
+    .results { 
+        width: 750px;
+        margin: 100px auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .results { 
+        width: 650px;
+        margin: 100px auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .results { 
+        width: 450px;
+        margin: 100px auto;
+    }
+}

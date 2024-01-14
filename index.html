@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aulas de Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&family=Rethink+Sans&family=Roboto:wght@100;300;400;500;700&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="main">
+        <h1 class="mainTitle">Super Draw</h1>
+        
+        <form id="megaForm">
+            <p class="suggestion-style">Choose your numbers: </p>
+            
+            <p id="warning" class="warning"></p>
+            <p id="warning-feedback" class="warning"></p>
+
+            <div class="number-style">
+                <div class="collum1">
+                    <label for="num1">01: </label>
+                    <input type="number" name="num1" id="num1" max="60" oninput="uniqueFeedbackMsg(this)">
+                    
+                    <label for="num2">02: </label>
+                    <input type="number" name="num2" id="num2" max="60" oninput="uniqueFeedbackMsg(this)">
+                    
+                    <label for="num3">03: </label>
+                    <input type="number" name="num3" id="num3" max="60" oninput="uniqueFeedbackMsg(this)">
+                    
+                </div>
+                
+                <div class="collum2">
+                    <label for="num4">04: </label>
+                    <input type="number" name="num4" id="num4" max="60" oninput="uniqueFeedbackMsg(this)">
+                    
+                    <label for="num5">05: </label>
+                    <input type="number" name="num5" id="num5" max="60" oninput="uniqueFeedbackMsg(this)">
+                    
+                    <label for="num6">06: </label>
+                    <input type="number" name="num6" id="num6" max="60" oninput="uniqueFeedbackMsg(this)">
+                </div>
+                
+                <div class="collum3">
+                    <label for="num7">07: </label>
+                    <input type="number" name="num7" id="num7" max="60" oninput="uniqueFeedbackMsg(this)">
+                    
+                    <label for="num8">08: </label>
+                    <input type="number" name="num8" id="num8" max="60" oninput="uniqueFeedbackMsg(this)">
+                    
+                    <label for="num9">09: </label>
+                    <input type="number" name="num9" id="num9" max="60" oninput="uniqueFeedbackMsg(this)">
+                </div>
+                
+                <div>
+                    <label for="num10">10: </label>
+                    <input type="number" name="num10" id="num10" max="60" oninput="uniqueFeedbackMsg(this)">
+                    
+                    <label for="num11">11: </label>
+                        <input type="number" name="num11" id="num11" max="60" oninput="uniqueFeedbackMsg(this)">
+                        
+                        <label for="num12">12: </label>
+                        <input type="number" name="num12" id="num12" max="60" oninput="uniqueFeedbackMsg(this)">
+                    </div>
+                    
+                    <div>
+                        <label for="num13">13: </label>
+                        <input type="number" name="num13" id="num13" max="60" oninput="uniqueFeedbackMsg(this)">
+                        
+                        <label for="num14">14: </label>
+                        <input type="number" name="num14" id="num14" max="60" oninput="uniqueFeedbackMsg(this)">
+                        
+                        <label for="num15">15: </label>
+                        <input type="number" name="num15" id="num15" max="60" oninput="uniqueFeedbackMsg(this)">
+                    </div>
+
+                </div>
+                
+                <div class="percentage-style">
+                    <label for="percentage">Choose the lucky percentage: </label>
+                    <select id="percentage" name="percentage">
+                        <option value=0>0%</option>
+                        <option value=10>10%</option>
+                        <option value=20>20%</option>
+                        <option value=30>30%</option>
+                        <option value=40>40%</option>
+                        <option value=50>50%</option>
+                        <option value=60>60%</option>
+                        <option value=70>70%</option>
+                        <option value=80>80%</option>
+                        <option value=90>90%</option>
+                        <option value=100>100%</option>
+                    </select>
+                </div>
+                
+                <div id="buttons">
+                    <input type="submit" id="submitButtonReset" onclick="return resetClick(event)" value="Reset">
+                    <input type="submit" id="submitButton" onclick="return feedbackClick()" value="Generate">
+                    <input type="submit" id="submitButtonGenerate" onclick="return generateClick(event)" value="Complete">
+                </div>
+                
+            </form>
+            
+            <div class="results">
+                <h2>Results: </h2>
+                <p class="server-number"></p>
+                <p class="sentence-style"></p>
+            </div>
+            
+        </div>
+        
+        <script src="scripts/uiHelpers.js"></script>
+        <script src="scripts/domHandler.js"></script>
+        <script src="scripts/numberUtils.js"></script>
+        <script src="scripts/validationUtils.js"></script>
+        <script src="scripts/app.js"></script>
+</body>
+</html>

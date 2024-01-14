@@ -1,0 +1,71 @@
+Projeto: Super Draw
+
+   O projeto "Super Draw" foi desenvolvido ao longo de duas semanas, com uma dedicação diária de 3 horas, 
+sendo meu primeiro grande trabalho. Feito em HTML, CSS e JavaScript após dois meses de estudo. O projeto 
+consiste em um simulador de sorteio de números, oferecendo uma opção de porcentagem de sorte que contribuí
+com os acertos do usuário e exibindo os resultados em tempo real.
+   
+   O usuário é capaz de escolher 15 números distintos entre 1 e 60 onde é possível receber um feedback. 
+Se os critérios não forem atendidos ao enviar o formulário através do botão 'Generate', uma mensagem de 
+alerta específica referente ao erro é exibida. O sistema é aprimorado com opções de sorte, onde uma 
+porcentagem maior aumenta as chances de acerto. O projeto inclui três botões adicionais: 'reset', que 
+limpa todos os campos; 'generate', o botão principal, aciona uma função que verifica se as regras foram 
+seguidas e, caso afirmativo, gera seis números sorteados; 'complete', que, a cada clique, preenche todos 
+os campos vazios com números aleatórios, excluindo um campo vinculado a um valor específico do usuário.
+Por fim, na seção de resultados é mostrado os números de sorteio seguido de uma mensagem sinalizando a
+quantidade de números acertados ou a não seleção de ao menos 6 números.
+
+	Variáveis Globais:
+
+   numberInputs: Obtém todos os valores relacionados aos inputs de número.
+   serverNumbers: Responsável pela alocação dos números sorteados.
+   userNumbers: Responsável pela alocação dos números de entrada do usuário.
+   generatedNumbers: Armazena exclusivamente os números do servidor.
+	
+	Funções:
+
+   alignNum(serverNumber): Adiciona um zero à esquerda para números menores que 10.
+   applyWarningStyles(element, fontSize, color): Aplica estilos de aviso dinâmicos.
+   compareNumbers(arrNumber, letNumber): Compara se um número está presente em uma matriz.
+   displayMsg(clientNumber, serverNumber, msgState): Exibe uma mensagem com base nos números gerados.
+   displayResults(serverNumber, msgState): Exibe os resultados na página.
+   feedbackClick(): Manipula o clique no botão de feedback.
+   getElementById(id): Obtém um elemento pelo ID.
+   generateClick(event): Gera números aleatórios ou preenche com números fornecidos.
+   getRandomNumber(excludeArray): Gera um número aleatório excluindo os números de uma matriz.
+   getUniqueNum(arrRoot, array, letNum): Obtém um número único, removendo-o de uma matriz.
+   isDuplicate(inputs, currentInput): Verifica se há duplicatas nos números fornecidos.
+   isLuckyDraw(): Retorna verdadeiro ou falso com base em uma probabilidade definida.
+   processForm(): Processa o formulário e gera números aleatórios com base nas entradas.
+   querySelect(selector): Obtém o primeiro elemento que corresponde ao seletor.
+   querySelectAll(selector): Obtém todos os elementos que correspondem ao seletor.
+   removeInvalidIndex(array): Remove índices inválidos (não números) de uma matriz.
+   removeNumber(array, letNum): Remove um número específico de uma matriz.
+   resetClick(event): Reseta os números inseridos.
+   setClientNumber(): Define os valores da matriz clientNumber.
+   setElementValueById(id, value): Define o valor de um elemento pelo ID.
+   setWarning(warningMessage): Define uma animação a mensagem de feedback.
+   setNumberInputs(): Define os valores dos inputs de número.
+   uniqueFeedbackMsg(input): Exibe uma mensagem de feedback sobre duplicatas.
+
+	Funções Visuais:
+
+   select: Variação de 0% a 100%, onde uma porcentagem maior implica uma maior probabilidade de igualdade de números.
+   Botões:
+      Reset: Esvazia os campos, acionando a função resetClick(event).
+      Enviar: Checa se há números duplicados, acionando a função feedbackClick().
+      Generate: Gera números aleatórios, acionando a função generateClick(event).
+
+   Ao iniciar o projeto, inicialmente decidi limitar-me aos recursos que havia definido no início. À medida que avançava, 
+percebi que poderia melhorar o desempenho e a visibilidade utilizando PHP. No entanto, como o projeto já estava em 
+andamento, optei por não introduzir essa mudança. O desenvolvimento levou cerca de duas semanas, sendo que os primeiros 
+4 a 5 dias foram dedicados à implementação das principais funcionalidades. Posteriormente, concentrei-me na refatoração 
+e na melhoria da legibilidade do código.
+
+   Neste processo, enfrentei algumas frustrações, especialmente ao realizar ajustes ou adições mínimas que acabavam ao final 
+impactando nos resultados. Eu acredito que essa situações são comuns e está presente em todos os desenvolvedores, contudo 
+vejo isso como uma oportunidade de aprendizado e evolução.
+
+   Ao longo do projeto, consegui converter minhas ideias teóricas em práticas tangíveis, enfrentando desafios reais. Mesmo 
+diante das frustrações, me mantive resiliente, o que me levou a superar obstáculos lógicos e encontrar soluções. 
+No final, alcancei meus objetivos, concluindo o projeto conforme inicialmente planejado.
